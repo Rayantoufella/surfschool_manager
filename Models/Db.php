@@ -5,7 +5,7 @@ class Db {
     private $host = "localhost";
     private $user = "root";
     private $pass = "";
-    private $db = "school";
+    private $db = "surfschool" ;
     private $pdo ;
 
 
