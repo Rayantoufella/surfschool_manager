@@ -78,8 +78,8 @@ class Admin extends user {
                 l.level AS lesson_level, 
                 l.coach
             FROM enroll e 
-            INNER JOIN student s ON e.student_id = s.id 
-            INNER JOIN lesson l ON e.lesson_id = l.id 
+            JOIN student s ON e.student_id = s.id 
+            JOIN lesson l ON e.lesson_id = l.id 
             INNER JOIN user u ON s.user_id = u.id' ;
             $stmt = $this->pdo->prepare($query);
             $stmt->execute();
